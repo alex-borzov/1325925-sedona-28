@@ -19,13 +19,40 @@
     </nav>
   </header>
   <main>
-    <h1>Большой выбор гостиниц на любой вкус</h1>
+    <h1 class="visually-hidden">Большой выбор гостиниц на любой вкус</h1>
     <section>
-      <h2>Фильтр гостиниц</h2>
-      <!-- Здесь будет форма фильтра -->
+      <h2 class="visually-hidden">Фильтр гостиниц</h2>
+      <form action="https://echo.htmlacademy.ru" method="get">
+        <fieldset>
+          <legend>Инфраструктура:</legend>
+         <ul>
+           <li><input id="filter-pool" type="checkbox" name="pool" checked><label for="filter-pool">Бассейн</label></li>
+           <li><input id="filret-parking" type="checkbox" name="parking"><label for="filret-parking">Парковка</label></li>
+           <li><input id="filter-wi-fi" type="checkbox" name="wi-fi"><label for="filter-wi-fi"></label>Wi-Fi</li>
+         </ul>
+        </fieldset>
+        <fieldset>
+          <legend>Тип жилья:</legend>
+          <ul>
+            <li><input id="filter-hotel" type="checkbox" name="hotel"checked><label for="filter-hotel">Гостиница</label></li>
+            <li><input id="filter-motel" type="checkbox" name="motel"checked><label for="filter-motel">Мотель</label></li>
+            <li><input id="filter-apartments" type="checkbox" name="apartments"checked><label for="filter-apartments">Апартаменты</label></li>
+          </ul>
+        </fieldset>
+
+        <label for="filter-cost">Стоимость в сутки(Р):</label>
+        <table border="1">
+          <tr>
+            <td>от 0</td>
+            <td>до 3000</td>
+          </tr>
+        </table>
+        <input id="filter-cost" type="range" min="0" max="3000" name="cost">
+        <button type="submit">Показать</button>
+      </form>
     </section>
     <section>
-      <h2>Результаты поиска</h2>
+      <h2 class="visually-hidden">Результаты поиска</h2>
       <p>Найдено: 3</p>
       <p>Сортировка:</p>
       <ul>
@@ -35,7 +62,7 @@
       </ul>
     </section>
     <section>
-      <h2>Отели</h2>
+      <h2 class="visually-hidden">Отели</h2>
       <ul>
         <li>
           <h3><a href="#">Amara Resort & Spa</a></h3>
