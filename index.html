@@ -34,17 +34,14 @@
           <ul>
             <li>
               <h4>Жильё</h4>
-              <img src="" alt="" >
               <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
             </li>
             <li>
               <h4>Еда</h4>
-              <img src="" alt="" >
               <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
             </li>
             <li>
               <h4>Сувениры</h4>
-              <img src="" alt="" >
               <p>Не только китайского, но и местного производства!</p>
             </li>
           </ul>
@@ -76,23 +73,29 @@
       <h2 class="visually-hidden">Поиск гостиницы</h2>
       <p>Заинтересовались?</p>
       <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+      <button><a href="#">Поиск гостиницы в Седоне</a></button>
       <form action="https://echo.htmlacademy.ru" method="post">
-        <h3>Поиск гостиницы в Седоне</h3>
         <p>
           <label for="arrival-date">Дата заезда:</label>
           <input id="arrival-date" type="text" name="arrival-date" placeholder="24 апреля 2017 ">
+          <button></button>
         </p>
         <p>
-          <label for="departyre-date">Дата выезда:</label>
+          <label for="departure-date">Дата выезда:</label>
           <input id="departyre-date" type="text" name="arrival-date" placeholder="4 июля 2017">
+          <button></button>
         </p>
         <p>
           <label for="adults">Взрослые</label>
-          <span>-</span><input id="adults" type="text"  name="adults" placeholder="2"><span>+</span>
+          <button>-</button>
+          <input id="adults" type="text"  name="adults" value="2">
+          <button>+</button>
         </p>
         <p>
           <label for="children">Дети</label>
-          <span>-</span><input id="children" type="text"  name="children" placeholder="0"><span>+</span>
+          <button>-</button>
+          <input id="children" type="text"  name="children" value="0">
+          <button>+</button>
         </p>
         <button type="submit">Найти</button>
       </form>
