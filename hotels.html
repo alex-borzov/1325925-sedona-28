@@ -3,18 +3,21 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
   <header>
-    <nav>
+    <nav class="main-navigation">
       <a href="index.html">
         <img src="img/logo.svg" alt="Логотип туристического сайта города Sedona" width="138" height="70 ">
       </a>
-      <ul>
+      <ul class="site-navigation">
         <li><a href="index.html">Информация</a></li>
         <li><a href="#">Фото и видео</a></li>
         <li><a href="#">Карта штата</a></li>
-        <li><a href="#">Гостиницы</a></li>
+        <li><a class="selected" href="#">Гостиницы</a></li>
       </ul>
     </nav>
   </header>
@@ -71,9 +74,9 @@
     </section>
     <section>
       <h2 class="visually-hidden">Результаты поиска</h2>
-      <p>Найдено: 3</p>
-      <p>Сортировка:</p>
-      <ul>
+      <p class="found">Найдено: 3</p>
+      <p class="sort-result">Сортировка:</p>
+      <ul class="sort-result">
         <li><a href="#">по цене</a></li>
         <li><a href="#">по типу</a></li>
         <li><a href="#">по рейтингу</a></li>
@@ -81,41 +84,40 @@
     </section>
     <section>
       <h2 class="visually-hidden">Отели</h2>
-      <ul>
+      <ul class="result-of-found     ">
         <li>
           <h3><a href="#">Amara Resort & Spa</a></h3>
           <a href="#"><img src="img/amara.jpg" alt="Общий вид гостиницы &quot;Amara Resort & Spa на фоне скалы&quot;" width="135" height="90"></a>
           <p>Гостиница <span>от 4000 Р.</span></p>
-          <a href="#">Подробнее</a>
-          <a href="#">Забронировать</a>
+          <button class="detailed"><a href="#">Подробнее</a></button>
+          <button class="book"><a href="#">Забронировать</a></button>
         </li>
         <li>
           <h3><a href="#">Desert Quail Inn</a></h3>
           <a href="#"><img src="img/desert.jpg" alt="Фасад гостиницы &quot;Desert Quail Inn с фонтаном&quot;" width="135" height="90"></a>
           <p>Мотель <span>от 3000 Р.</span></p>
-          <a href="#">Подробнее</a>
-          <a href="#">Забронировать</a>
+          <button class="detailed"><a href="#">Подробнее</a></button>
+          <button class="book"><a href="#">Забронировать</a></button>
         </li>
         <li>
           <h3><a href="#">Villas At Poco Diablo</a></h3>
           <a href="#"><img src="img/villas.jpg" alt="Лужайка перед фасадом гостиницы &quot;Villas At Poco Diablo&quot;" width="135" height="90"></a>
           <p>Апартаменты<span>от 2000 Р.</span></p>
-          <a href="#">Подробнее</a>
-          <a href="#">Забронировать</a>
+          <button class="detailed"><a href="#">Подробнее</a></button>
+          <button class="book"><a href="#">Забронировать</a></button>
         </li>
       </ul>
     </section>
   </main>
-  <footer>
+  <footer class="main-footer">
     <p>#visitsedona</p>
-    <p><a href="tel:+74956660166">тел:+7(495) 666-01-66</a></p>
-    <ul>
-      <li><a href="#"><img src="img/twitter.svg" alt="Логотип Твиттер"></a></li>
-      <li><a href="#"><img src="img/fb-icon.svg" alt="Логотип Фейсбук"></a></li>
-      <li><a href="#"><img src="img/youtube.svg" alt="Логотип Ютуб"></a></li>
+    <p>тел:<a href="tel:+74956660166"> +7(495) 666-01-66</a></p>
+    <ul class="footer-list">
+      <li class="social "><a href="#"><img src="img/twitter.svg" alt="Логотип Твиттер"></a></li>
+      <li class="social "><a href="#"><img src="img/fb-icon.svg" alt="Логотип Фейсбук"></a></li>
+      <li class="social "><a href="#"><img src="img/youtube.svg" alt="Логотип Ютуб"></a></li>
     </ul>
-    </section>
-    <p>website by<a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-htmlacademy.svg" alt="логотип html academy" width="114" height="40"></a></p>
+    <p class="developer">website by <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-htmlacademy.svg" alt="логотип html academy" width="114" height="40"></a></p>
 
   </footer>
 
