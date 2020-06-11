@@ -15,7 +15,7 @@
   --basic-gray: #EEEEEE;
   --basic-light-gray: #FFFFFF;
   --basic-extra-gray: #F2F2F2;
-  --canyon: #ffa64d;
+  --canyon:  #A6D2F0;
 }
 
 /* Global */
@@ -24,7 +24,7 @@ body {
   min-width: 1200px;
   margin: 0 40px;
   padding: 0;
-  font-family: "PT Sans", "Arial", sans-serif;
+  font-family: "PT Sans", Arial, sans-serif;
   font-size: 14px;
   line-height: 21px;
   font-weight: normal;
@@ -95,7 +95,10 @@ input[type="radio"].visually-hidden {
  .slogan {
   width: 1200px;
   height: 509px;
-  background: url("../img/background-photo.jpg") no-repeat top var(--canyon);
+  background-image: url("../img/background-photo.jpg");
+  background-repeat: no-repeat;
+  background-position: top;
+  background-color: var(--canyon);
  }
 
 .main-item {
@@ -105,14 +108,14 @@ input[type="radio"].visually-hidden {
   color: var(--basic-black);
 }
 
-.advantages-h2 {
+.advantages-main-title {
   font-size: 14px;
   line-height: 26px;
   font-weight: normal;
 }
 
-.advantages-h3,
-.advantages-h4 {
+.advantages-title,
+.real-town-title {
   font-size: 21px;
   color: var(--basic-black)
 }
@@ -132,16 +135,13 @@ input[type="radio"].visually-hidden {
   background-color: var( --sky-blue);
 }
 
-.blue-block-h3 {
+.blue-block-title {
   color: var(--basic-white);
 }
 
 .real-town {
   width: 1200px;
   background-color: var( --basic-white);
-  background: url("../img/icon-1.svg") no-repeat left,
-              url("../img/icon-3.svg") no-repeat center,
-              url("../img/icon-2.svg") no-repeat right;
 }
 
 /* Hotel Search */
@@ -152,27 +152,24 @@ input[type="radio"].visually-hidden {
   line-height: 24px;
 }
 
-.button-hotel-search {
+.hotel-search-link {
   width: 568px;
-  background: var(--light-bronze);
   border: none;
-}
-
-.button-hotel-search-a {
   font-size: 21px;
   line-height: 26px;
   font-weight: bold;
+  background: var(--light-bronze);
   color: var(--basic-white);
   text-transform: uppercase;
 }
 
-.button-hotel-search:hover,
-.button-hotel-search:focus {
+.hotel-search-link:hover,
+.hotel-search-link:focus {
   background-color: var(--bronze);
 }
 
-.button-hotel-search:active,
-.button-hotel-search-a:active {
+
+.hotel-search-link:active {
   background-color: var(--dark-bronze);
   color: var(--transparent-text);
 }
@@ -192,7 +189,9 @@ input[type="radio"].visually-hidden {
 .button-ikon {
   width: 21px;
   height: 23px;
-  background: url("../img/calendar.svg") no-repeat center;
+  background-image: url("../img/calendar.svg");
+  background-repeat: no-repeat;
+  background-position: center;
   border: none;
 }
 
@@ -260,7 +259,11 @@ input[type="radio"].visually-hidden {
   background-color: var(--extra-blue);
 }
 
-.social svg:active path {
+.social svg {
+  fill: var(--basic-white)
+}
+
+.social:active svg {
   fill: var(--transparent-text);
 }
 
@@ -276,7 +279,10 @@ input[type="radio"].visually-hidden {
 
 .forms {
   width: 1200px;
-  background: url("../img/background-hotel.jpg") no-repeat top var(--canyon);
+  background-image: url("../img/background-hotel.jpg");
+  background-repeat: no-repeat;
+  background-position: top;
+  background-color: var(--canyon);
 }
 
 .present-hotels {
@@ -288,19 +294,19 @@ input[type="radio"].visually-hidden {
 }
 
 .found,
-.result-of-found-a {
+.result-of-found-link {
   font-size: 21px;
   line-height: 26px;
   font-weight: bold;
   color: var(--basic-black);
 }
 
-.result-of-found-a:hover,
-.result-of-found-a:focus {
+.result-of-found-link:hover,
+.result-of-found-link:focus {
   color: var(--sky-blue);
 }
 
-.result-of-found-a:active{
+.result-of-found-link:active{
   color: var(--basic-black);
   opacity: 0.3;
 }
@@ -314,27 +320,24 @@ input[type="radio"].visually-hidden {
   list-style: none;
 }
 
-.detailed-a,
-.book-a {
+.detailed,
+.book {
+  width: 110px;
   font-size: 14px;
   line-height: 21px;
   font-weight: bold;
+  background-color: var(--sky-blue);
   color: var(--basic-white);
   text-transform: uppercase;
 }
 
-.detailed {
-  width: 110px;
-  background-color: var(--sky-blue);
-}
 
 .detailed:hover,
 .detailed:focus {
   background-color: var(--blue);
 }
 
-.detailed:active,
-.detailed-a:active {
+.detailed:active {
   background-color: var(--extra-blue);
   color: var(--transparent-text);
 }
@@ -348,9 +351,7 @@ input[type="radio"].visually-hidden {
 .book:focus {
   background-color: var(--bronze);
 }
-
-.book:active,
-.book-a:active {
+link.book:active {
   background-color: var(--dark-bronze);
   color: var(--transparent-text);
 }
