@@ -57,17 +57,67 @@ input[type="radio"].visually-hidden {
   overflow: hidden;
 }
 
+/* Grid */
+
+.page {
+  height: 100%;
+}
+
+.page-body {
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  align-content: start;
+}
+
+/* Main header */
+
+.main-header {
+  outline: 5px solid rgba(0, 255, 0, 0.3);
+  outline-offset: -5px;
+}
+
+/* Logo */
+
+.main-header-logo {
+  position: absolute;
+  align-self: center;
+  width: 138px;
+  height: 70px;
+  outline: 5px solid rgba(255, 0, 0, 0.3);
+  outline-offset: -5px;
+}
 
 /* Navigation */
 
 .main-navigation {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
   line-height: 26px;
   font-weight: bold;
   background-color: var(--basic-white);
 }
 
+.main-navigation-wrapper {
+  width: 100%;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
 .site-navigation {
+  display: flex;
+  justify-content: space-between;
+  width: 1200px;
+  margin: 0;
+  padding: 0;
   list-style: none;
+  outline: 5px solid rgba(0, 255, 255, 0.3);
+  outline-offset: -5px;
 }
 
 .site-navigation a {
@@ -88,30 +138,59 @@ input[type="radio"].visually-hidden {
   color: var(--light-bronze);
 }
 
+
 /* Main */
+
+.main-content {
+  /* display: flex; */
+  /* flex-direction: column; */
+}
 
 /* Advantages */
 
- .slogan {
+.slogan {
+  outline: 5px solid rgba(0, 255, 255, 0.7);
+  outline-offset: -5px;
+
+  display: flex;
+  justify-content: center;
   width: 1200px;
   height: 509px;
-  background-image: url("../img/background-photo.jpg");
-  background-repeat: no-repeat;
-  background-position: top;
   background-color: var(--canyon);
+  background-image: url("../img/intro-mask.svg"), url("../img/background-photo.jpg");
+  background-repeat: no-repeat;
+  background-position: bottom, top;
  }
 
 .main-item {
+  outline: 5px solid rgba(0, 0, 255, 0.7);
+  outline-offset: -5px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
   font-size: 21px;
   line-height: 26px;
   font-weight: bold;
   color: var(--basic-black);
+  background-color: var(--basic-white);
+}
+
+.advantages {
+  outline: 5px solid rgba(255, 0, 55, 0.7);
+  outline-offset: -5px;
+
 }
 
 .advantages-main-title {
+  display: flex;
+  justify-content: center;
+  margin: 0;
   font-size: 14px;
   line-height: 26px;
   font-weight: normal;
+  background-color: var(--basic-white);
 }
 
 .advantages-title,
@@ -122,11 +201,28 @@ input[type="radio"].visually-hidden {
 
 .advantages-list,
 .real-town-list {
+  margin: 0;
+  padding: 0;
   list-style: none;
 }
 
-.advantages-item {
+.advantages-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
   text-align: center;
+}
+
+.advantages-item {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.real-town-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 
 .blue-block {
@@ -144,7 +240,25 @@ input[type="radio"].visually-hidden {
   background-color: var( --basic-white);
 }
 
+.bridge{
+  order: -1;
+}
+
+.without-img {
+  width: 400px;
+}
 /* Hotel Search */
+
+.searcher {
+  outline: 5px solid rgba(25, 220, 255, 0.7);
+  outline-offset: -5px;
+
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--basic-white);
+}
 
 .interested {
   font-weight: bold;
@@ -186,7 +300,7 @@ input[type="radio"].visually-hidden {
   color: var(--basic-black);
 }
 
-.button-ikon {
+.button-icon {
   width: 21px;
   height: 23px;
   background-image: url("../img/calendar.svg");
@@ -195,12 +309,12 @@ input[type="radio"].visually-hidden {
   border: none;
 }
 
-.input-ikon {
+.input-icon {
   width: 346px;
 }
 
 .find {
-  width: 458px;
+  width: 468px;
   background: var(--sky-blue);
   color: var(--basic-white);
   font-size: 21px;
@@ -220,15 +334,43 @@ input[type="radio"].visually-hidden {
   color: var(--transparent-text)
 }
 
+.map {
+  outline: 5px solid rgba(195, 150, 255, 0.7);
+  outline-offset: -5px;
+
+
+  height: 594px;
+}
+
 /* Main footer */
 
 .main-footer {
+  outline: 5px solid rgba(65, 60, 65, 0.7);
+  outline-offset: -5px;
+
+
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
   width: 1200px;
-  background-color: var(--transparent-white);
   font-size: 21px;
   line-height: 26px;
   font-weight: bold;
+  background-color: var(--transparent-white);
   color: var(--basic-black);
+ }
+
+.footer-contacts{
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* justify-content: center; */
+  /* align-items: flex-start; */
+  margin: 0;
+  width: 400px;
+  justify-self: start;
+}
+
+.footer-contacts p {
+  margin: 0;
 }
 
 .main-footer a {
@@ -236,17 +378,26 @@ input[type="radio"].visually-hidden {
 }
 
 .footer-list {
+  width: 400px;
+  justify-self: center;
+  align-content: center;
+  display: flex;
   list-style: none;
 }
 
 .developer {
   font-size: 14px;
   line-height: 26px;
-  font-weight: normal            ;
+  font-weight: normal;            ;
 }
 
 .social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 6px;
   width: 46px;
+  height: 46px;
   background-color: var(--sky-blue);
 }
 
@@ -265,6 +416,13 @@ input[type="radio"].visually-hidden {
 
 .social:active svg {
   fill: var(--transparent-text);
+}
+
+.developer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
 }
 
 .developer svg:hover path {
@@ -320,8 +478,8 @@ input[type="radio"].visually-hidden {
   list-style: none;
 }
 
-.detailed,
-.book {
+.hotel-detailed,
+.hotel-booking {
   width: 110px;
   font-size: 14px;
   line-height: 21px;
@@ -332,30 +490,30 @@ input[type="radio"].visually-hidden {
 }
 
 
-.detailed:hover,
-.detailed:focus {
+.hotel-detailed:hover,
+.hotel-detailed:focus {
   background-color: var(--blue);
 }
 
-.detailed:active {
+.hotel-detailed:active {
   background-color: var(--extra-blue);
   color: var(--transparent-text);
 }
 
-.book {
+.hotel-booking {
   width: 142px;
   background-color: var(--light-bronze);
 }
 
-.book:hover,
-.book:focus {
+.hotel-booking:hover,
+.hotel-booking:focus {
   background-color: var(--bronze);
 }
-link.book:active {
+.hotel-booking:active {
   background-color: var(--dark-bronze);
   color: var(--transparent-text);
 }
 
-.hotels-footer {
-  background-color: var(--transparent-white);
+.hotel-footer {
+  background-color: var(--basic-white);
 }
