@@ -71,7 +71,6 @@ input[type="radio"].visually-hidden {
 }
 
 /* Main header */
-/* coment */
 
 /* Logo */
 
@@ -225,7 +224,6 @@ input[type="radio"].visually-hidden {
 .searcher {
   display:flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   background-color: var(--basic-white);
 }
@@ -319,7 +317,6 @@ input[type="radio"].visually-hidden {
 
 .footer-contacts{
   margin: 0;
-  width: 400px;
   justify-self: start;
 }
 
@@ -332,7 +329,6 @@ input[type="radio"].visually-hidden {
 }
 
 .footer-list {
-  width: 400px;
   justify-self: center;
   align-content: center;
   display: flex;
