@@ -71,11 +71,7 @@ input[type="radio"].visually-hidden {
 }
 
 /* Main header */
-
-.main-header {
-  outline: 5px solid rgba(0, 255, 0, 0.3);
-  outline-offset: -5px;
-}
+/* coment */
 
 /* Logo */
 
@@ -84,9 +80,7 @@ input[type="radio"].visually-hidden {
   align-self: center;
   width: 138px;
   height: 70px;
-  outline: 5px solid rgba(255, 0, 0, 0.3);
-  outline-offset: -5px;
-}
+  }
 
 /* Navigation */
 
@@ -94,7 +88,6 @@ input[type="radio"].visually-hidden {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-
   line-height: 26px;
   font-weight: bold;
   background-color: var(--basic-white);
@@ -112,12 +105,9 @@ input[type="radio"].visually-hidden {
 .site-navigation {
   display: flex;
   justify-content: space-between;
-  width: 1200px;
   margin: 0;
   padding: 0;
   list-style: none;
-  outline: 5px solid rgba(0, 255, 255, 0.3);
-  outline-offset: -5px;
 }
 
 .site-navigation a {
@@ -141,21 +131,13 @@ input[type="radio"].visually-hidden {
 
 /* Main */
 
-.main-content {
-  /* display: flex; */
-  /* flex-direction: column; */
-}
+
 
 /* Advantages */
 
 .slogan {
-  outline: 5px solid rgba(0, 255, 255, 0.7);
-  outline-offset: -5px;
-
   display: flex;
   justify-content: center;
-  width: 1200px;
-  height: 509px;
   background-color: var(--canyon);
   background-image: url("../img/intro-mask.svg"), url("../img/background-photo.jpg");
   background-repeat: no-repeat;
@@ -163,9 +145,6 @@ input[type="radio"].visually-hidden {
  }
 
 .main-item {
-  outline: 5px solid rgba(0, 0, 255, 0.7);
-  outline-offset: -5px;
-
   display: flex;
   justify-content: center;
   align-items: center;
@@ -175,12 +154,6 @@ input[type="radio"].visually-hidden {
   font-weight: bold;
   color: var(--basic-black);
   background-color: var(--basic-white);
-}
-
-.advantages {
-  outline: 5px solid rgba(255, 0, 55, 0.7);
-  outline-offset: -5px;
-
 }
 
 .advantages-main-title {
@@ -250,9 +223,6 @@ input[type="radio"].visually-hidden {
 /* Hotel Search */
 
 .searcher {
-  outline: 5px solid rgba(25, 220, 255, 0.7);
-  outline-offset: -5px;
-
   display:flex;
   flex-direction: column;
   justify-content: center;
@@ -334,24 +304,12 @@ input[type="radio"].visually-hidden {
   color: var(--transparent-text)
 }
 
-.map {
-  outline: 5px solid rgba(195, 150, 255, 0.7);
-  outline-offset: -5px;
-
-
-  height: 594px;
-}
 
 /* Main footer */
 
 .main-footer {
-  outline: 5px solid rgba(65, 60, 65, 0.7);
-  outline-offset: -5px;
-
-
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  width: 1200px;
+  display: flex;
+  justify-content: space-between;
   font-size: 21px;
   line-height: 26px;
   font-weight: bold;
@@ -360,10 +318,6 @@ input[type="radio"].visually-hidden {
  }
 
 .footer-contacts{
-  /* display: flex; */
-  /* flex-direction: column; */
-  /* justify-content: center; */
-  /* align-items: flex-start; */
   margin: 0;
   width: 400px;
   justify-self: start;
